@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body onload="print()">
+	<h1>Convert Currency</h1>
+	<table>
+		<tr>
+			<td><input type="number" name="" id="fromAmount" value="1" min="1" onkeyup="print()" onchange="print()" onclick="print()"></td>
+			<td>
+				<select id="from" onchange="print()">
+					<option value="EUR">France (EUR)</option>
+					<option value="USD">US Dollars (USD)</option>
+					<option value="GBP">British (GBP)</option>
+					<option value="JPY">Japan (YEN)</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><input type="number" name="" id="toAmount" disabled></td>
+			<td>
+				<select id="to" onchange="print()">
+					<option value="EUR">France (EUR)</option>
+					<option value="USD" selected>US Dollars (USD)</option>
+					<option value="GBP">British (GBP)</option>
+					<option value="JPY">Japan (YEN)</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+	<script src="cc.js"></script>
+</body>
+</html>
